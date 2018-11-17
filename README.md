@@ -1,8 +1,8 @@
 # DUDE Police
 
-[![PlantAnalyzer](https://forthebadge.com/images/badges/built-by-developers.svg)](https://lvamsavarthan.github.io/lvstore)
-[![PlantAnalyzer](https://forthebadge.com/images/badges/built-with-love.svg)](https://lvamsavarthan.github.io/lvstore)
-[![PlantAnalyzer](https://forthebadge.com/images/badges/built-for-android.svg)](https://lvamsavarthan.github.io/lvstore)
+[![DUDE Police](https://forthebadge.com/images/badges/built-by-developers.svg)](https://lvamsavarthan.github.io/lvstore)
+[![DUDE Police](https://forthebadge.com/images/badges/built-with-love.svg)](https://lvamsavarthan.github.io/lvstore)
+[![DUDE Police](https://forthebadge.com/images/badges/built-for-android.svg)](https://lvamsavarthan.github.io/lvstore)
 
 **This app is an extendsion for DUDE - personal companion**
 <br><br>
