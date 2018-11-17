@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/frag_name"
+                android:text="FRAGMENT NAME"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/settings2"
+                android:textSize="25sp"
+                android:textColor="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/settings2"
+                android:layout_toStartOf="@+id/about2"
+                android:layout_gravity="end"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_settings_black_24dp"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/about2"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_info_black_24dp"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/dashboard_view"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:padding="5dp"
+                android:background="@drawable/gradient_morning"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="34dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/appname"
+                        android:text="DUDE"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/settings"
+                        android:textSize="25sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/settings"
+                        android:layout_toStartOf="@+id/about"
+                        android:layout_gravity="end"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:tint="@color/colorPrimaryDark"
+                        app:srcCompat="@drawable/ic_settings_black_24dp"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageButton
+                        android:id="@+id/about"
+                        android:layout_alignParentEnd="true"
+                        android:padding="10dp"
+                        android:tint="@color/colorPrimaryDark"
+                        app:srcCompat="@drawable/ic_info_black_24dp"
+                        android:background="@null"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/greeting_card"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardMaxElevation="10dp"
+                    android:visibility="invisible"
+                    app:cardBackgroundColor="@color/blue"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/greeting"
+                            android:textColor="#FFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#FFF"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

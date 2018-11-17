@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/navigation_investigating"
+        android:icon="@drawable/ic_remove_red_eye_black_24dp"
+        android:title="Investigating" />
+
+    <item
+        android:id="@+id/navigation_received"
+        android:icon="@drawable/ic_verified_user_black_24dp"
+        android:title="Received" />
+
+    <item
+        android:id="@+id/navigation_closed"
+        android:icon="@drawable/ic_not_interested_black_24dp"
+        android:title="Closed" />
+
+</menu>
